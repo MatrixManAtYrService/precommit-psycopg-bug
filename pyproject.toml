@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "mypkg"
+version = "0.1.0"
+description = ""
+authors = ["me"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+SQLAlchemy = { version = "^2.0.0", extras=["asyncio"]}
+psycopg = "^3.1.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
