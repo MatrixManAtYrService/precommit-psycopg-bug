@@ -1,6 +1,6 @@
 This repo exists to report a bug, it doesn't do anything else.
 
-First become convinced that as-is, there is no error:
+As-is, there is no error:
 
 ```
 % nix develop
@@ -12,7 +12,7 @@ $ exit
 %
 ```
 
-Then, edit `flake.nix`
+But if you edit `flake.nix` to include pre-commit...
 
 ```
 devShells.default = pkgs.mkShell {
@@ -26,7 +26,7 @@ devShells.default = pkgs.mkShell {
 };
 ```
 
-Then, repeat the above commands:
+...and repeat the above commands...
 
 ```
 % nix develop
@@ -39,7 +39,7 @@ $ exit
 ```
 
 
-The error looks like this:
+...you'll get the following error:
 ```
 Traceback (most recent call last):
   File "/home/matt/src/mypkg/mypkg/app.py", line 2, in <module>
