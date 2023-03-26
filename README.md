@@ -68,3 +68,6 @@ Attempts made:
 ```
 
 What is it about pkgs.pre-commit that prevents pkgs.python311Packages.psycopg from being able to find libpq?
+
+
+I suspect it might be [this](https://github.com/NixOS/nixpkgs/issues/223275)
